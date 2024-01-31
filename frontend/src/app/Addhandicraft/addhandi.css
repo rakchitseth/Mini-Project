@@ -1,0 +1,42 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+    justify-content:flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.15);
+    
+}
+
+.child{
+    width: 20%;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 255, 0);
+    background-color:  rgba(160, 189, 179, 0.332);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.my-btn{
+    background-color: crimson;
+    color: rgba(255, 255, 255, 0.452);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.signup-bg{
+    background-image: url("https://imgs.search.brave.com/NdtP-zdByHLjELvreu-jTL-A6YYkltYekpxXb_4VErc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvMTkyMHgxMjAw/LTFsNDZjaGEwcXpm/ZzRuNGQuanBn");   
+    background-size: cover;
+}
+
+.signup-full-bg{
+    background-color: aquamarine;
+}
