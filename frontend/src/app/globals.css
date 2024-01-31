@@ -1,0 +1,21 @@
+@import url();
+
+.my-input{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.my-btn{
+  color: blue;
+}
+
+.chat-body{
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  overflow: auto;
+  justify-content: flex-end;
+
+}
