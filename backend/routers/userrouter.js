@@ -56,6 +56,19 @@ router.delete('/delete/:id', (req, res) => {
             res.json(err)
         });
 });
+
+router.post('/authenticate',(req,res)=>{
+    model.findOne(req.body)
+    .then((result) => {
+      if(result) res.json(result);
+      else res.status(401).json({message:'Invalid credentials'})
+        
+      }  
+    ).catch((err) => {
+        console.log(err);
+        res.json(err);
+    });
+});
 module.exports = router;
 //getall
 //getbyid

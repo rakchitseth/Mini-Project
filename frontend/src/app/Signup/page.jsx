@@ -29,7 +29,7 @@ const Signup = () => {
 
             //   resetForm();
             // },3000);
-            const res = await fetch('http://localhost:5000/social/add', {
+            const res = await fetch('http://localhost:5500/user/add', {
                 method: 'POST',
                 body: JSON.stringify(values),
                 headers: { 'Content-type': 'application/json' }

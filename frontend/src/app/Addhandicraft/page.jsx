@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import './signup.css';
+import './addhandi.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { enqueueSnackbar } from 'notistack';
@@ -28,7 +28,7 @@ const Addhandicraft = () => {
 
             //   resetForm();
             // },3000);
-            const res = await fetch('http://localhost:6000/social/add', {
+            const res = await fetch('http://localhost:5500/handicraft/add', {
                 method: 'POST',
                 body: JSON.stringify(values),
                 headers: { 'Content-type': 'application/json' }
@@ -52,11 +52,11 @@ const Addhandicraft = () => {
                     <div className='row'>
                         <div className='col-md-4 mx-auto'>
                             <div className="card-body p-5">
-                                <h1>Sign Up</h1>
+                                <h1>Add details of handicraft</h1>
                                 <form onSubmit={productform.handleSubmit}>
                                     <label htmlFor='productname'>productname: </label>
                                     <span className='text-danger ms-3 '>{productform.errors.productname}</span>
-                                    <input type='text' className='form-control mb-4' id="username" onChange={productform.handleChange} value={productform.values.productname} />
+                                    <input type='text' className='form-control mb-4' id="productname" onChange={productform.handleChange} value={productform.values.productname} />
 
                                     <label htmlFor='image'>Image Link: </label>
                                     <span className='text-danger ms-3 '>{productform.errors.image}</span>
