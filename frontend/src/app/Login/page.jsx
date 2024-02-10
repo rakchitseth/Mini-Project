@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import './Login.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { enqueueSnackbar } from 'notistack';
@@ -61,32 +62,42 @@ const Login = () => {
     validationSchema: LoginSchema
   })
   return (
-    <div className='d-flex justify-content-center align-items-center'>
-      <div className='parent '>
-        <div className='child '>
-          <h1>Login</h1>
-          <form onSubmit={loginform.handleSubmit}>
-            {/* <label htmlFor='username'>Username: </label>
-            <span className='text-danger ms-3 '>{loginform.errors.username}</span>
-            <input type='text'  className='form-control mb-4' id="username" onChange={loginform.handleChange} value={loginform.values.username}/> */}
+    <div className='d-flex justify-content-center align-items-center vh-100 login-full-bg'>
+    <div className="container w-50">
+        <div className="card">
+            <div className='row'>
+                <div className='col-md-4 mx-auto'>
+                    <div className="card-body p-4">
+                        <h1>Login</h1>
+                        <form onSubmit={loginform.handleSubmit}>
+                            {/* <label htmlFor='username'>Username: </label>
+                            <span className='text-danger ms-3 '>{loginform.errors.username}</span>
+                            <input type='text' className='form-control mb-4' id="username" onChange={loginform.handleChange} value={loginform.values.username} /> */}
 
-            <label htmlFor='Email'>Email: </label>
-            <span className='text-danger ms-3 '>{loginform.errors.email}</span>
-            <input type='text' className='form-control mb-4' id="email" onChange={loginform.handleChange} value={loginform.values.email} />
+                            <label htmlFor='Email'>Email: </label>
+                            <span className='text-danger ms-3 '>{loginform.errors.email}</span>
+                            <input type='text' className='form-control mb-4' id="email" onChange={loginform.handleChange} value={loginform.values.email} />
 
-            <label htmlFor='password'>Password: </label>
-            <span className='text-danger ms-3 '>{loginform.errors.password}</span>
-            <input autoComplete='false' type='text' className='form-control mb-4' id="password" onChange={loginform.handleChange} value={loginform.values.password} />
+                            <label htmlFor='password'>Password: </label>
+                            <span className='text-danger ms-3 '>{loginform.errors.password}</span>
+                            <input type='text' className='form-control mb-4' id="password" onChange={loginform.handleChange} value={loginform.values.password} />
 
-            {/* <label htmlFor='password'>Confirm Password: </label>
-            <span className='text-danger ms-3 '>{loginform.errors.confirmpassword}</span>
-            <input type='password' className='form-control mb-4'id="confirmpassword" onChange={loginform.handleChange} value={loginform.values.confirmpassword}/> */}
+                            {/* <label htmlFor='password'>Confirm Password: </label>
+                            <span className='text-danger ms-3 '>{loginform.errors.confirmpassword}</span>
+                            <input type='password' className='form-control mb-4' id="confirmpassword" onChange={loginform.handleChange} value={loginform.values.confirmpassword} /> */}
 
-            <button className='btn btn-primary' type='submit' disabled={loginform.isSubmitting}>{loginform.isSubmitting ? 'submitting...' : 'Login'}</button>
-          </form>
+                            <button className='btn btn-primary' type='submit' disabled={loginform.isSubmitting}>{loginform.isSubmitting ? 'submitting...' : 'Login'}</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div className="col-md-6 login-bg m-0 p-0">
+                    {/* <div className=' h-100'></div> */}
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+</div>
   )
 }
 

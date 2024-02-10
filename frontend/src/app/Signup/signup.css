@@ -33,10 +33,12 @@
 }
 
 .signup-bg{
-    background-image: url("https://imgs.search.brave.com/NdtP-zdByHLjELvreu-jTL-A6YYkltYekpxXb_4VErc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvMTkyMHgxMjAw/LTFsNDZjaGEwcXpm/ZzRuNGQuanBn");   
+    background-image: url("https://thumbs.dreamstime.com/b/hand-made-lavender-sachets-textile-bags-soft-hearts-hand-hold-raft-cardboard-parcel-zero-waste-gifts-dry-lavender-hand-206999104.jpg");   
     background-size: cover;
 }
 
 .signup-full-bg{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-image: url("https://previews.123rf.com/images/seneesriyota/seneesriyota1401/seneesriyota140100064/25606768-bamboo-craft-background.jpg");   
+    background-size: cover;
 }
