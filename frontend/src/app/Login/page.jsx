@@ -55,9 +55,6 @@ const Login = () => {
       else {
         enqueueSnackbar('Something Went Wrong', { variant: 'error' })
       }
-
-
-
     },
     validationSchema: LoginSchema
   })
