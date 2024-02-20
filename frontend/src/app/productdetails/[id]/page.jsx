@@ -22,9 +22,9 @@ const ProductDetails = () => {
         setProductData(data);
     }
 
-    useEffect(() => {
-      getProductDetails();
-    }, []);
+        useEffect(() => {
+        getProductDetails();
+        }, []);
 
     const displayDetails = () => {
         if(productData!==null){
